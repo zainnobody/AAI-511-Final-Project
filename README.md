@@ -1,4 +1,7 @@
 # Composer Identification and Music Genre Classification
+
+<a href="https://www.kaggle.com/datasets/blanderbuss/midi-classic-music">Kaggle MIDI Classic Music Dataset</a>
+
 ## Project Overview
 This project aims to develop a deep learning model that accurately predicts the composer of a given musical score. By leveraging Long Short-Term Memory (LSTM) networks and Convolutional Neural Networks (CNN), the model is trained to identify compositions by Bach, Beethoven, Chopin, and Mozart. The project involves data collection, preprocessing, feature extraction, model building, training, evaluation, and optimization.
 
@@ -32,7 +35,7 @@ The project workflow includes:
 * Optimization: Fine-tuning hyperparameters to improve model accuracy.
 
 ## Libraries and Frameworks Used
-* Mido: Used for reading and writing MIDI files, handling MIDI messages.
+* Mido: Used for reading and writing MIDI files, and handling MIDI messages.
 * Pandas: Data manipulation and analysis.
 * Numpy: Numerical operations.
 * Scikit-learn: Preprocessing data, encoding labels, splitting datasets, evaluating model performance.
@@ -66,4 +69,4 @@ The models achieved high accuracy in predicting the composers of the musical sco
 The project demonstrates the potential of deep learning in music analysis, contributing to the integration of technology and the arts. The models developed can assist in identifying composers of classical music pieces, making them useful for musicians, educators, and researchers. Future work could explore expanding the dataset to include more composers, improving the model architecture, and integrating these models into music recommendation systems and educational tools.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the <a href="https://github.com/zainnobody/AAI-511-Final-Project/tree/main?tab=MIT-1-ov-file">LICENSE</a> file for details.
