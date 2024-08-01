@@ -15,7 +15,6 @@ This project aims to develop a deep learning model that accurately predicts the 
 * Results
 * Conclusion and Future Work
 * License
-* References
 
 ## Introduction
 Music, a form of art with a rich history, features distinct styles from various composers. This project addresses the challenge of identifying the composer of a musical piece using deep learning techniques. The goal is to develop a robust model that can accurately classify compositions by four renowned composers.
