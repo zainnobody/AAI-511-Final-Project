@@ -167,3 +167,6 @@ raw_data_unzipped/
 
 *.pkl
 *.h5
+internal-work.md
+Backup.ipynb
+best_model_all_artists/
