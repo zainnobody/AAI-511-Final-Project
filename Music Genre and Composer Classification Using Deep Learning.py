@@ -65,7 +65,7 @@ specific_artists = ['Bach', 'Beethoven', 'Chopin', 'Mozart'] # These are used fo
 # %% [markdown]
 # ## Data Collection
 # 
-# The data was quite unorganized and downloaded in a zip format. Several steps were taken to make the data useful and well organized. 
+# The data was quite unorganized and downloaded in a zip format. Several steps were taken to make the data useful and well organized. Get more information about the data within Kaggle at: https://www.kaggle.com/datasets/blanderbuss/midi-classic-music. 
 
 # %%
 # Function to delete a directory and its contents
@@ -431,7 +431,7 @@ process_and_augment_midi_files(raw_data_extracted, specific_artists)
 # Ignoring the few files that are not working, as we have a good amount of data.
 
 # %% [markdown]
-# ## Long Short-Term Memory (LSTM) 
+# ## Long Short-Term Memory (LSTM)
 # 
 # From here and down, the content is divided into types of models tried within the project: Long short-term memory (LSTM) and Convolutional Neural Network (CNN). 
 
