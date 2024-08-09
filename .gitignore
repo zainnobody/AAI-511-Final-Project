@@ -164,3 +164,6 @@ cython_debug/
 
 
 raw_data_unzipped/
+
+*.pkl
+*.h5
