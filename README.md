@@ -1,5 +1,7 @@
 # Music Genre and Composer Classification Using Deep Learning
 
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg) 
+
 ` Authors: Zain Ali, Angel Benitez, and Outhai Xayavongsa`
 
 ## Project Overview
