@@ -22,6 +22,8 @@ Classifying composers based on musical scores is a challenging task due to the n
 | `requirements.txt`                                      | Lists all the dependencies and libraries required to run the project.                                  |
 | `LICENSE`                                               | The licensing information for the project.                                                            |
 | `.gitignore`                                            | Specifies files and directories that should be ignored by Git.                                         |
+| `models-diagrams`                                           | Contains Diagrams of the CNN model architecture                                         |
+
 
 ## Dataset
 
@@ -40,7 +42,7 @@ These composers were chosen due to their distinct styles and significant contrib
 
 ### All Artists Inclusive Analysis
 
-In addition to the primary analysis focusing on the four composers mentioned above, the project also includes a comprehensive model that analyzes compositions from a broader set of 147 classical composers. This model expands the classification task to cover a wider range of styles and compositional techniques, offering insights into the ability of deep learning models to generalize across a diverse set of musical works.
+In addition to the primary analysis focusing on the four composers mentioned above, the project also includes a comprehensive model that analyzes compositions from a broader set of 145 classical composers. This model expands the classification task to cover a wider range of styles and compositional techniques, offering insights into the ability of deep learning models to generalize across a diverse set of musical works.
 
 This inclusive analysis is crucial for understanding the limitations and strengths of the models when applied to a larger and more varied dataset. The findings from this analysis provide a deeper understanding of how well the models can differentiate between composers with varying levels of similarity in their musical styles.
 
@@ -79,7 +81,7 @@ Further optimization is performed by fine-tuning the hyperparameters, adjusting 
 The results of the model training and evaluation for the four composers (Bach, Beethoven, Chopin, and Mozart) will be included in the project report. This section highlights the accuracy, validation loss, and any insights gained during the project.
 
 ### All Artists Inclusive Analysis
-The broader model that includes 147 composers provides a more extensive evaluation, revealing how the models perform across a larger and more diverse dataset. The results from this analysis are crucial for understanding the generalization capabilities of the models.
+The broader model that includes 145 composers provides a more extensive evaluation, revealing how the models perform across a larger and more diverse dataset. The results from this analysis are crucial for understanding the generalization capabilities of the models.
 
 ## Usage
 
