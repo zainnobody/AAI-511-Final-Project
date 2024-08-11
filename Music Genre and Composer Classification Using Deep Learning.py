@@ -1,3 +1,4 @@
+
 # %% [markdown]
 # # Music Genre and Composer Classification Using Deep Learning 
 # 
@@ -8,10 +9,12 @@
 # %% [markdown]
 # ## Introduction
 # 
-# In this project, we employ deep learning to classify classical music compositions by their composers. Leveraging a dataset of 3,929 MIDI files from 175 composers—including Bach, Beethoven, Chopin, and Mozart—we develop Long Short-Term Memory (LSTM)  and Convolutional Neural Network (CNN) models to identify the composer of a given piece. Initially, we concentrate on the four mentioned composers to fine-tune our approach. In the end, we created a model encompassing all 147 composers in the dataset, assessing its generalization capabilities across diverse musical styles. We also performed optimizations and many other techniques to get the best models within the last few weeks. 
+# In this project, we employ deep learning to classify classical music compositions by their composers. Leveraging a dataset of 3,929 MIDI files from 175 composers—including Bach, Beethoven, Chopin, and Mozart—we develop Long Short-Term Memory (LSTM)  and Convolutional Neural Network (CNN) models to identify the Composer of a given piece. Initially, we concentrate on the four mentioned composers to fine-tune our approach. In the end, we created a model encompassing all 145 composers in the dataset, assessing its generalization capabilities across diverse musical styles. We also performed optimizations and many other techniques to get the best models within the last few weeks. 
 # 
 # 
 # If you would like more information about the files or need access to the full project, please go to our GitHub repository: https://github.com/zainnobody/AAI-511-Final-Project. Feel free to fork or clone it. The README file also contains more information. 
+# 
+# Note: Artist and Composer are two words used to describe the creators of classical music, which is now in MIDI format. In this notebook, we use Artist, and the paper and other content use Composer.  
 
 # %% [markdown]
 # ### Libraries Import
@@ -1342,6 +1345,14 @@ X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_st
 # %% [markdown]
 # ### Defining the CNN Model
 
+# %% [markdown]
+# Here is what the architecture looks like:
+# 
+# ![CNN Initial Model Architecture](models-diagrams/initial-cnn-model.png)
+
+# %% [markdown]
+# We start with the piano rolls of Binary and Velocity channels and it goes through several layers, ending up within one of the Artists in the end. 
+
 # %%
 model = Sequential(
     [
@@ -1569,6 +1580,11 @@ y_all.shape
 # %% [markdown]
 # ### Defining Model
 
+# %% [markdown]
+# Here is what the architecture looks like:
+# 
+# ![All Artists Inclusive Architecture](models-diagrams/full-cnn-model.png)
+
 # %%
 def create_best_model(input_shape, output_shape, optimizer="adam", init="glorot_uniform", dropout_rate=0.4):
     model = Sequential(
@@ -1728,15 +1744,15 @@ def build_and_analyse_model(filtered_df, info = ""):
 
     return model
 
-model_01 = build_and_analyse_model(filtered_df)
+model_01 = build_and_analyse_model(filtered_df, info = "0_1")
 
 # %%
 filtered_df_1 = filter_using_threshold(processed_chunk_all_df, 1)
-model_1 = build_and_analyse_model(filtered_df)
+model_1 = build_and_analyse_model(filtered_df, info = "1")
 
 # %%
 filtered_df_10 = filter_using_threshold(processed_chunk_all_df, 10)
-model_10 = build_and_analyse_model(filtered_df)
+model_10 = build_and_analyse_model(filtered_df, info = "10")
 
 # %% [markdown]
 # Here is the table summarizing of accuracy at different thresholds:
